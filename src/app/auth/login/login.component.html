@@ -1,0 +1,25 @@
+<div class="login-web-container">
+    <mat-card style="width: 500px">
+
+        <div class="row">
+            <div class="col-12">
+                <tui-input class="b-form" [(ngModel)]="namaPengguna">
+                    Nama Pengguna
+                </tui-input>
+            </div>
+            <div class="col-12" style="margin-top: 10px;">
+                <tui-input-password [(ngModel)]="kataSandi">
+                    Kata Sandi
+                </tui-input-password>
+            </div>
+        </div>
+
+        <div class="row align-items-end" style="margin-top: 20px;">
+            <div class="col-4">
+                <button tuiButton type="button" (click)="signin()" class="tui-space_right-3 tui-space_bottom-3">
+                    Masuk
+                </button>
+            </div>
+        </div>
+    </mat-card>
+</div>

@@ -1,0 +1,152 @@
+.total-container {
+  display: flex;
+  flex-direction: column;
+  .total-label {
+    font-size: 10px;
+    color: rgb(129, 129, 129);
+  }
+
+  .total-value {
+    font-size: 20px;
+  }
+}
+
+.container-dp {
+  display: grid;
+  grid-auto-flow: column dense;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "page-1"
+    "page-2"
+    "page-3"
+    "page-4"
+    "page-5"
+    "page-6"
+    "page-7"
+    "page-8";
+  width: 95%;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+}
+
+.page-1 {
+  grid-area: page-1;
+  width: 100%;
+}
+
+.page-2 {
+  grid-area: page-2;
+}
+
+.page-3 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  grid-template-areas: "";
+  grid-area: page-3;
+}
+
+.page-4 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  grid-template-areas: "page-4-1 page-4-2";
+  grid-area: page-4;
+  // height: 1000px;
+  // height: auto;
+  * {
+    height: auto;
+  }
+}
+
+.page-4-1 {
+  grid-area: page-4-1;
+  // padding: 1em;
+}
+
+.page-4-2 {
+  grid-area: page-4-2;
+  // padding: 1em;
+}
+
+.page-5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  grid-template-areas: "page-5-1 page-5-2";
+  grid-area: page-5;
+}
+
+.page-5-1 {
+  grid-area: page-5-1;
+}
+
+.page-5-2 {
+  grid-area: page-5-2;
+}
+
+.page-6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  grid-template-areas: "page-6-1 page-6-2";
+  grid-area: page-6;
+}
+
+.page-6-1 {
+  grid-area: page-6-1;
+}
+
+.page-6-2 {
+  grid-area: page-6-2;
+}
+
+.page-7 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  grid-template-areas: "page-7-1 page-7-2";
+  grid-area: page-7;
+}
+
+.page-7-1 {
+  grid-area: page-7-1;
+}
+
+.page-7-2 {
+  grid-area: page-7-2;
+}
+
+.page-8 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1em 1em;
+  grid-auto-flow: row;
+  grid-template-areas: "page-8-1 page-8-2";
+  grid-area: page-8;
+}
+
+.page-8-1 {
+  grid-area: page-8-1;
+}
+
+.page-8-2 {
+  grid-area: page-8-2;
+}

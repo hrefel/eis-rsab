@@ -1,0 +1,90 @@
+<mat-card style="height: 100%; display: flex; flex-direction: column;">
+    <p class="tui-island__category">Pemakaian Tempat Tidur</p>
+    <h6 class="tui-text_body-xs">Total: <div [countUp]="resultData.all"></div>
+    </h6>
+
+    <div class="row" style="margin: auto;">
+        <div class="col-6">
+            <div class="container-ptt">
+                <img src="../../../../../assets/svg/baby-girl.svg" alt="BABY-GIRL">
+
+                <div class="ptt-content">
+                    <span class="ptt-title">Bayi Perempuan</span>
+                    <span class="ptt-title">0 - 30 Hari</span>
+                    <hr>
+                    <span [countUp]="resultData.balitaperempuan" class="ptt-value"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-6">
+            <div class="container-ptt">
+                <img src="../../../../../assets/svg/baby-boy.svg" alt="BABY-BOY">
+
+                <div class="ptt-content">
+                    <span class="ptt-title">Bayi Laki - laki</span>
+                    <span class="ptt-title">0 - 30 Hari</span>
+                    <hr>
+                    <span [countUp]="resultData.balitalaki" class="ptt-value"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-6">
+            <div class="container-ptt">
+                <img src="../../../../../assets/svg/kid-boy.svg" alt="KID-BOY">
+
+                <div class="ptt-content">
+                    <span class="ptt-title">Anak Laki - laki</span>
+                    <span class="ptt-title">> 30 Hari - 17 Tahun</span>
+                    <hr>
+                    <span [countUp]="resultData.anaklaki" class="ptt-value"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-6">
+            <div class="container-ptt">
+                <img src="../../../../../assets/svg/kid-girl.svg" alt="KID-GIRL">
+
+                <div class="ptt-content">
+                    <span class="ptt-title">Anak Perempuan</span>
+                    <span class="ptt-title">> 30 Hari - 17 Tahun</span>
+                    <hr>
+                    <span [countUp]="resultData.anakperempuan" class="ptt-value"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-6">
+            <div class="container-ptt">
+                <img src="../../../../../assets/svg/women.svg" alt="WOMEN">
+
+                <div class="ptt-content">
+                    <span class="ptt-title">Perempuan Dewasa</span>
+                    <span class="ptt-title">> 17 Tahun - 50 Tahun</span>
+                    <hr>
+                    <span [countUp]="resultData.perempuandewasa" class="ptt-value"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-6">
+            <div class="container-ptt">
+                <img src="../../../../../assets/svg/grandmother.svg" alt="Geriatri">
+
+                <div class="ptt-content">
+                    <span class="ptt-title">Geriatri</span>
+                    <span class="ptt-title">> 50 Tahun</span>
+                    <hr>
+                    <span [countUp]="resultData.geriatri" class="ptt-value"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</mat-card>

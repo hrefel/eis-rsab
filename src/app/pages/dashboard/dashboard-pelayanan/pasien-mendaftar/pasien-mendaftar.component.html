@@ -1,0 +1,131 @@
+<div class="row">
+    <div class="col-4">
+
+        <div class="dash-card mat-elevation-z4" (click)="getDetail(templateDetail,18)">
+            <div class="dash-card-body">
+                <img src="../../../../assets/svg/fracture.svg" alt="">
+                
+                <div class="dash-content">
+                    <div [countUp]="resultJumlahPasien.getValue().rawat_jalan" class="countup"></div>
+                    <div class="name-countup">
+                        Pengunjung Rawat Jalan
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-4">
+
+        <div class="dash-card mat-elevation-z4" (click)="getDetail(templateDetail,16)">
+            <div class="dash-card-body">
+                <img src="../../../../assets/svg/patient.svg" alt="">
+                
+                <div class="dash-content">
+                    <div [countUp]="resultJumlahPasien.getValue().rawat_inap" class="countup"></div>
+                    <div class="name-countup">
+                        Pengunjung Rawat Inap
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-4">
+
+        <div class="dash-card mat-elevation-z4" (click)="getDetail(templateDetail,24)">
+            <div class="dash-card-body">
+                <img src="../../../../assets/svg/ambulance.svg" alt="">
+                
+                <div class="dash-content">
+                    <div [countUp]="resultJumlahPasien.getValue().igd" class="countup"></div>
+                    <div class="name-countup">
+                        Pengunjung IGD
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-4">
+
+        <div class="dash-card mat-elevation-z4" (click)="getDetail(templateDetail,27)">
+            <div class="dash-card-body">
+                <img src="../../../../assets/svg/x-ray.svg" alt="">
+                
+                <div class="dash-content">
+                    <div [countUp]="resultJumlahPasien.getValue().radiologi" class="countup"></div>
+                    <div class="name-countup">
+                        Pengunjung Radiologi
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-4">
+
+        <div class="dash-card mat-elevation-z4" (click)="getDetail(templateDetail,3)">
+            <div class="dash-card-body">
+                <img src="../../../../assets/svg/flask.svg" alt="">
+                
+                <div class="dash-content">
+                    <div [countUp]="resultJumlahPasien.getValue().laboratorium" class="countup"></div>
+                    <div class="name-countup">
+                        Pengunjung Laboratorium
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-4">
+
+        <div class="dash-card mat-elevation-z4" (click)="getDetail(templateDetail,28)">
+            <div class="dash-card-body">
+                <img src="../../../../assets/svg/yoga.svg" alt="">
+                
+                <div class="dash-content">
+                    <div [countUp]="resultJumlahPasien.getValue().rehab_medik" class="countup"></div>
+                    <div class="name-countup">
+                        Pengunjung Rehabilitasi Medik
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<ng-template #templateDetail let-observer>
+    <div style="padding: 20px;">
+        <ngx-datatable class="material" [rows]="dataDetailPasien" columnMode="force" [headerHeight]="50"
+            [footerHeight]="50" rowHeight="auto" [reorderable]="true" [limit]="10">
+
+            <ngx-datatable-column name="Nama Pasien" prop="namapasien" [width]="350"></ngx-datatable-column>
+            <ngx-datatable-column name="Ruangan" prop="namaruangan" [width]="350"></ngx-datatable-column>
+            <ngx-datatable-column name="No. Rekam Medis" prop="nocm" [width]="250"></ngx-datatable-column>
+            <ngx-datatable-column name="No. Registrasi" prop="noregistrasi" [width]="250"></ngx-datatable-column>
+            <ngx-datatable-column name="Tanggal Registrasi" prop="tglregistrasi" [width]="350"></ngx-datatable-column>
+            <ngx-datatable-column name="Tanggal Pulang" prop="tglpulang" [width]="350"></ngx-datatable-column>
+
+        </ngx-datatable>
+    </div>
+
+
+
+    <!-- <button tuiButton type="button" size="m" (click)="observer.complete()">
+        Tutup
+    </button> -->
+</ng-template>

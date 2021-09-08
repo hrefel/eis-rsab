@@ -1,0 +1,28 @@
+<mat-card style="height: 100%;">
+    <p class="tui-island__category">Kunjungan Rumah Sakit Berdasarkan Jenis Pasien</p>
+    <tui-tabs [(activeItemIndex)]="activeItemIndex">
+        <button tuiTab>
+            Semua
+        </button>
+
+        <button tuiTab>
+            Detail
+        </button>
+    </tui-tabs>
+
+    <div *ngIf="activeItemIndex == 0" style="height: 650px;">
+        <ngx-charts-pie-chart [scheme]="colorScheme" [results]="dataAll" [gradient]="gradient" *ngIf="dataAllLoaded"
+            [legend]="showLegend" [labels]="showLabels" [doughnut]="isDoughnut">
+        </ngx-charts-pie-chart>
+        <!-- <canvas baseChart  [data]="polarAreaChartData" [labels]="polarAreaChartLabels"
+            [legend]="polarAreaLegend" [chartType]="polarAreaChartType">
+        </canvas> -->
+    </div>
+
+    <div style="margin: 10px 0;" *ngIf="activeItemIndex == 1" style="height: 650px;">
+        <ngx-charts-bar-vertical-normalized [scheme]="colorSchemeDetail" [results]="dataDetail" [gradient]="gradient"
+            [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel"
+            [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel">
+        </ngx-charts-bar-vertical-normalized>
+    </div>
+</mat-card>

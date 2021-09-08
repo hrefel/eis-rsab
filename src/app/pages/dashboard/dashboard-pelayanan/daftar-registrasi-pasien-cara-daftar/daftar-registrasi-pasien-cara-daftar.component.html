@@ -1,0 +1,128 @@
+<mat-card style="height: 100%;">
+    <p class="tui-island__category">Daftar Registrasi Pasien Menurut Cara Daftar</p>
+
+    <div class="row" style="align-items: center;">
+        <div class="col-6">
+            <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels"
+                [chartType]="pieChartType" [options]="pieChartOptions" [colors]="pieChartColors"
+                [legend]="pieChartLegend">
+            </canvas>
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <div class="col-4">
+                    <div class="dash-card shadowed bordered">
+                        <div class="dash-card-body">
+                            
+                            <div class="dash-content">
+                                <div class="multiple-value">
+                                    <div [countUp]="resultDaftarRegistrasiPasienMenurutCD.do.rajal" class="countup do"></div>
+                                    <div [countUp]="resultDaftarRegistrasiPasienMenurutCD.lp.rajal" class="countup lp"></div>
+                                </div>
+                                
+                                <div class="name-countup">
+                                    Rawat Jalan
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-4">
+                    <div class="dash-card shadowed bordered">
+                        <div class="dash-card-body">
+                            
+                            <div class="dash-content">
+                                <div class="multiple-value">
+                                    <div [countUp]="resultDaftarRegistrasiPasienMenurutCD.do.ranap" class="countup do"></div>
+                                    <div [countUp]="resultDaftarRegistrasiPasienMenurutCD.lp.ranap" class="countup lp"></div>
+                                </div>
+                                
+                                <div class="name-countup">
+                                    Rawat Inap
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="dash-card shadowed bordered">
+                        <div class="dash-card-body">
+                            
+                            <div class="dash-content">
+                                <div class="multiple-value">
+                                    <div [countUp]="resultDaftarRegistrasiPasienMenurutCD.do.rehab" class="countup do"></div>
+                                    <div [countUp]="resultDaftarRegistrasiPasienMenurutCD.lp.rehab" class="countup lp"></div>
+                                </div>
+                                
+                                <div class="name-countup">
+                                    Rehabilitasi Medik
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="dash-card shadowed bordered">
+                        <div class="dash-card-body">
+                            
+                            <div class="dash-content">
+                                <div class="multiple-value">
+                                    <div [countUp]="resultDaftarRegistrasiPasienMenurutCD.do.igd" class="countup do"></div>
+                                    <div [countUp]="resultDaftarRegistrasiPasienMenurutCD.lp.igd" class="countup lp"></div>
+                                </div>
+                                
+                                <div class="name-countup">
+                                    IGD
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="dash-card shadowed bordered">
+                        <div class="dash-card-body">
+                            
+                            <div class="dash-content">
+                                <div class="multiple-value">
+                                    <div [countUp]="resultDaftarRegistrasiPasienMenurutCD.do.lab" class="countup do"></div>
+                                    <div [countUp]="resultDaftarRegistrasiPasienMenurutCD.lp.lab" class="countup lp"></div>
+                                </div>
+                                
+                                <div class="name-countup">
+                                    Laboratorium
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="dash-card shadowed bordered">
+                        <div class="dash-card-body">
+                            
+                            <div class="dash-content">
+                                <div class="multiple-value">
+                                    <div [countUp]="resultDaftarRegistrasiPasienMenurutCD.do.rad" class="countup do"></div>
+                                    <div [countUp]="resultDaftarRegistrasiPasienMenurutCD.lp.rad" class="countup lp"></div>
+                                </div>
+                                
+                                <div class="name-countup">
+                                    Radiologi
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+        </div>
+    </div>
+</mat-card>

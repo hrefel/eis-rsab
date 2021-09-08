@@ -1,0 +1,13 @@
+<mat-card style="height: 100%;">
+    <p class="tui-island__category">Informasi Kedatangan Pengunjung Pasien Rawat Jalan</p>
+
+    <ngx-datatable class="material" [rows]="resultInfoKunjunganRajal" columnMode="force" [headerHeight]="50"
+        [footerHeight]="50" rowHeight="auto" [reorderable]="true" [limit]="10">
+
+        <ngx-datatable-column name="Poli" prop="namaruangan" [width]="250"></ngx-datatable-column>
+        <ngx-datatable-column prop="belumperiksa"></ngx-datatable-column>
+        <ngx-datatable-column prop="diperiksa"></ngx-datatable-column>
+        <ngx-datatable-column prop="batalregistrasi"></ngx-datatable-column>
+        <ngx-datatable-column prop="total"></ngx-datatable-column>
+    </ngx-datatable>
+</mat-card>

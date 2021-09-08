@@ -1,0 +1,7 @@
+<mat-card style="height: 100%;">    <p class="tui-island__category">Informasi Kedatangan Menurut Jenis Pelayanan</p>
+    <!-- <h3 class="tui-island__title">Some heading</h3> -->
+    <ngx-charts-bar-vertical-normalized *ngIf="dataLoaded" [scheme]="colorSchemeDetail" [results]="data" [gradient]="false"
+        [xAxis]="true" [yAxis]="true" [legend]="true" [showXAxisLabel]="true"
+        [showYAxisLabel]="true" [xAxisLabel]="'Instalasi'" [yAxisLabel]="'Jumlah Pasien'">
+    </ngx-charts-bar-vertical-normalized>
+</mat-card>

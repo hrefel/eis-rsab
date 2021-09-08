@@ -1,0 +1,8 @@
+<mat-card style="height: 100%;">
+    <p class="tui-island__category">10 Besar Asal Perujuk Pasien BPJS</p>
+
+    <ngx-charts-bar-vertical *ngIf="dataLoaded" [scheme]="colorScheme" [legendPosition]="legendPosition" [results]="data" [gradient]="gradient" [xAxis]="showXAxis"
+        [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel">
+    </ngx-charts-bar-vertical>
+</mat-card>

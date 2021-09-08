@@ -1,0 +1,74 @@
+<div class="container-dp">
+    <div class="page-1">
+        <mat-card style="height: 100%;">
+            <tui-tabs [(activeItemIndex)]="activeItemIndexTabJmlPasien">
+                <button tuiTab>
+                    Pasien Mendaftar
+                </button>
+                <button tuiTab>
+                    Pasien Terlayani
+                </button>
+            </tui-tabs>
+            <div *ngIf="activeItemIndexTabJmlPasien === 0">
+                <app-pasien-mendaftar></app-pasien-mendaftar>
+            </div>
+
+            <div *ngIf="activeItemIndexTabJmlPasien === 1">
+                <app-pasien-terlayani></app-pasien-terlayani>
+            </div>
+        </mat-card>
+
+    </div>
+    <div class="page-2">
+        <app-trend-pengunjung-pasien-rajal></app-trend-pengunjung-pasien-rajal>
+    </div>
+    <div class="page-3">
+        <app-daftar-registrasi-pasien-cara-daftar></app-daftar-registrasi-pasien-cara-daftar>
+    </div>
+    <div class="page-4">
+        <div class="page-4-1">
+            <app-info-kedatangan-pasien-rajal></app-info-kedatangan-pasien-rajal>
+        </div>
+        <div class="page-4-2">
+            <app-kunjungan-by-jenis-pasien></app-kunjungan-by-jenis-pasien>
+        </div>
+    </div>
+    <div class="page-5">
+        <div class="page-5-1">
+            <app-pemakaian-tempat-tidur></app-pemakaian-tempat-tidur>
+        </div>
+        <div class="page-5-2">
+            <app-info-kedatangan-pasien-by-jenis-pelayanan></app-info-kedatangan-pasien-by-jenis-pelayanan>
+        </div>
+    </div>
+    <div class="page-6">
+        <div class="page-6-1">
+            <app-top-ten-asal-perujuk-pasien-bpjs></app-top-ten-asal-perujuk-pasien-bpjs>
+        </div>
+        <div class="page-6-2">
+            <app-sebaran-pasien-ranap></app-sebaran-pasien-ranap>
+        </div>
+    </div>
+    <div class="page-7">
+        <div class="page-7-1">
+            <app-top-ten-diagnosa></app-top-ten-diagnosa>
+        </div>
+        <div class="page-7-2">
+            <app-data-kegiatan-pelayanan-rs></app-data-kegiatan-pelayanan-rs>
+        </div>
+    </div>
+    <div class="page-8">
+        <div class="page-8-1">
+            <app-ketersediaan-tempat-tidur-perkelas></app-ketersediaan-tempat-tidur-perkelas>
+        </div>
+        <div class="page-8-2">
+            <mat-card style="height: 100%;">
+                <p class="tui-island__category">Demografi</p>
+                <!-- <h3 class="tui-island__title">Some heading</h3> -->
+                <div class="tui-island__content">
+
+                </div>
+            </mat-card>
+        </div>
+    </div>
+</div>
