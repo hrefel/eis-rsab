@@ -1,5 +1,22 @@
 <mat-card style="height: 100%;">
     <p class="tui-island__category">10 Besar Diagnosa</p>
-    <!-- <h3 class="tui-island__title">Some heading</h3> -->
 
+    <div class="row justify-content-center">
+        <div class="col-4" *ngFor="let data of dataTopTenDiagnosa">
+            <div class="dash-card" [ngStyle]="{'background-color':data.color}">
+                <div class="dash-card-body">
+                    
+                    <div class="dash-content">
+                        <div [countUp]="data.jumlah" class="countup"></div>
+                        
+                        <div class="name-countup">
+                            {{data.namadiagnosa}}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
 </mat-card>

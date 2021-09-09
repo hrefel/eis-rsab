@@ -1,7 +1,108 @@
 <mat-card style="height: 100%;">
     <p class="tui-island__category">Data Kegiatan Pelayanan Rumah Sakit</p>
-    <!-- <h3 class="tui-island__title">Some heading</h3> -->
-    <div class="tui-island__content">
+    <h3 class="tui-island__title">{{dataKegiatanRS.bulan}}</h3>
+    
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <div class="dash-card" style="background-color: #D7E9F7;">
+                <div class="dash-card-body">
+                    
+                    <div class="dash-content">
+                        <div class="countup">{{dataKegiatanRS.bor}}</div>
+                        
+                        <div class="name-countup">
+                            BOR
+                        </div>
+                        <div class="tui-island__category">Bed Occupancy Ratio</div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="dash-card" style="background-color: #D7E9F7;">
+                <div class="dash-card-body">
+                    
+                    <div class="dash-content">
+                        <div class="countup">{{dataKegiatanRS.alos}}</div>
+                        
+                        <div class="name-countup">
+                            ALOS
+                        </div>
+                        <div class="tui-island__category">Average Length of Stay</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="dash-card" style="background-color: #D7E9F7;">
+                <div class="dash-card-body">
+                    
+                    <div class="dash-content">
+                        <div class="countup">{{dataKegiatanRS.toi}}</div>
+                        
+                        <div class="name-countup">
+                            TOI
+                        </div>
+                        <div class="tui-island__category">Turn Over Interval</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="dash-card" style="background-color: #D7E9F7;">
+                <div class="dash-card-body">
+                    
+                    <div class="dash-content">
+                        <div class="countup">{{dataKegiatanRS.bto}}</div>
+                        
+                        <div class="name-countup">
+                            BTO
+                        </div>
+                        <div class="tui-island__category">Bed Turn Over</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="dash-card" style="background-color: #D7E9F7;">
+                <div class="dash-card-body">
+                    
+                    <div class="dash-content">
+                        <div class="countup">{{dataKegiatanRS.ndr}}</div>
+                        
+                        <div class="name-countup">
+                            NDR
+                        </div>
+                        <div class="tui-island__category">Net Death Rate</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="dash-card" style="background-color: #D7E9F7;">
+                <div class="dash-card-body">
+                    
+                    <div class="dash-content">
+                        <div class="countup">{{dataKegiatanRS.gdr}}</div>
+                        
+                        <div class="name-countup">
+                            GDR
+                        </div>
+                        <div class="tui-island__category">Gross Death Rate</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 </mat-card>

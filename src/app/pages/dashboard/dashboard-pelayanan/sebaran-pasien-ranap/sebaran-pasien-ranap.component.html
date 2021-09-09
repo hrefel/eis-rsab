@@ -1,4 +1,6 @@
-<mat-card style="height: 100%;">    <p class="tui-island__category">Sebaran Pasien Rawat Inap</p>
-    <!-- <h3 class="tui-island__title">Some heading</h3> -->
-    
+<mat-card style="height: 100%;">
+    <p class="tui-island__category">Sebaran Pasien Rawat Inap</p>
+    <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType"
+        [options]="pieChartOptions" [colors]="pieChartColors" [legend]="pieChartLegend">
+    </canvas>
 </mat-card>

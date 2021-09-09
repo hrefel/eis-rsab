@@ -17,7 +17,7 @@ export class KetersediaanTempatTidurPerkelasComponent implements OnInit {
 
   getTempatTidurPerkelas() {
     this.http.get(`${BASE_URL.urlBaseTransaksi}eis/get-tempattidur-perkelas`).subscribe((response: Response) => {
-      // console.log("tempat tidur perkelas => ", response);
+      console.log("tempat tidur perkelas => ", response);
     })
   }
 

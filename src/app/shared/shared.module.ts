@@ -1,6 +1,6 @@
 import { LOCALE_ID, ModuleWithProviders, NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { UIModule } from "./";
+import { UIModule } from ".";
 
 @NgModule({
   imports: [
